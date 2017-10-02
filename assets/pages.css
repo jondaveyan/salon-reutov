@@ -24,6 +24,9 @@ body {
   background-size: 100% 85%;
   background-repeat: no-repeat;
 }
+#startchange {
+  padding-top: 0px !important;
+}
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
   color: #dcb879;
 }
@@ -580,6 +583,7 @@ body {
   @media screen and (max-width: 769px) {
     .homepage .hero-splash .align {
       left: 50% !important;
+      top: 35% !important;
     }
     #services.gallery .gallery-item {
       height: 400px;
@@ -588,9 +592,10 @@ body {
       height: 200px;
     }
     .hero-splash {
-      background-position-y: 24%;
+      background-position-y: 65%;
       background-size: 580px 480px;
       background-repeat: no-repeat;
+      height: 600px !important;  
     }
   }
 
