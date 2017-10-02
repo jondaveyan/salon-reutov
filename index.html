@@ -71,17 +71,6 @@
         <section class="hero-splash">
             <h3 class="hidden">Hero Images Slider</h3>
 
-            <!-- SLIDER SPLASH IMAGES -->
-            <div class="owl-carousel owl-theme" style="opacity: 1; display: block;">
-
-                <!-- SLIDE -->
-                <div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 6332px; left: 0px; display: block; transition: all 0ms ease; transform: translate3d(0px, 0px, 0px); transform-origin: 791.5px center 0px; perspective-origin: 791.5px center;"><div class="owl-item" style="width: 1583px;"><div>
-                    <img src="./assets/lazep4.jpg" alt="Background Image">
-                </div></div></div></div>
-
-                <!-- SLIDE -->
-                
-            </div>
             <div class="container">
                 <div class="row">
                     <div class="align lazer">
@@ -297,11 +286,6 @@
                           <td>1500</td>
                           <td>3000</td>
                         </tr>
-                        <tr>
-                          <td>Лазерная эпиляция</td>
-                          <td>1000</td>
-                          <td>5000</td>
-                        </tr>
                       </tbody>
                     </table>
                   </div>
@@ -497,8 +481,8 @@
                                     <div class="item">
                                         <h3>Адрес</h3>
                                         <ul class="list">
-                                            <li>20 Street Name, PO BOX 15</li>
-                                            <li>Sydney, Australia</li>
+                                            <li>г. Москва,</li>
+                                            <li>Юбилейный проспект 53</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -507,8 +491,7 @@
                                     <div class="item">
                                         <h3>Телефон</h3>
                                         <ul class="list">
-                                            <li>Local: 1 800 222 3333</li>
-                                            <li>Mobile: 1 800 222 3333</li>
+                                            <li>+79295747470</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -517,8 +500,7 @@
                                     <div class="item">
                                         <h3>Почта</h3>
                                         <ul class="list">
-                                            <li>needhelp@deliver.com</li>
-                                            <li>info@deliver.com</li>
+                                            <li>salon-reutov@gmail.com</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -529,15 +511,15 @@
                                     <h2>Оставить заявку</h2>
                                 </div>
 
-                                <form class="col-xs-12" action="https://zawiastudio.com/barber/contactform/contact-form-handler.php" method="post" name="contactform">
+                                <form class="col-xs-12" action="./email.php" method="post" name="contactform">
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <input type="text" name="name" id="name" class="form-control" placeholder="Имя">
-                                            <input type="tel" class="form-control" placeholder="Phone">
+                                            <input type="text" required name="name" id="name" class="form-control" placeholder="Имя">
+                                            <input type="tel" name="tel" required class="form-control" placeholder="Phone">
                                         </div>
                                         <div class="col-md-6">
-                                            <input type="email" name="email" id="email" class="form-control" placeholder="Почта">
-                                            <input type="text" class="form-control" placeholder="Вебсайт">
+                                            <input type="email" required name="email" id="email" class="form-control" placeholder="Почта">
+                                            <input type="text" name="website" class="form-control" placeholder="Вебсайт">
                                         </div>
                                         <div class="col-xs-12">
                                             <textarea class="form-control" name="message" id="message" rows="5" placeholder="Сообщение"></textarea>
@@ -563,10 +545,105 @@
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Подробные цены всех услуг</h4>
+                <h4 class="modal-title">Подробные цены услуг</h4>
               </div>
-              <div class="modal-body">
-                <p>Some text in the modal.</p>
+              <div class="modal-body pricelist">
+                <div class="tbl-header margin-top">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                      <thead>
+                        <tr>
+                          <th>Услуга</th>
+                          <th>Цена</th>
+                          <th>Услуга</th>
+                          <th>Цена</th>
+                        </tr>
+                      </thead>
+                    </table>
+                  </div>
+                  <div class="tbl-content">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                      <tbody>
+                        <tr>
+                          <td colspan="4" class="text-center">Лазерная эпиляция</td>
+                        </tr>
+                        <tr>
+                          <td>Лицо полностью</td>
+                          <td>3500</td>
+                          <td>Верхняя губа</td>
+                          <td>1500</td>
+                        </tr>
+                        <tr>
+                          <td>Область лба</td>
+                          <td>1000</td>
+                          <td>Подбородок</td>
+                          <td>1000</td>
+                        </tr>
+                        <tr>
+                          <td>Подмышечная впадина</td>
+                          <td>2000</td>
+                          <td>Руки предплечье</td>
+                          <td>6000</td>
+                        </tr>
+                        <tr>
+                          <td>Область живота</td>
+                          <td>2000</td>
+                          <td>Бикини стандартное</td>
+                          <td>3500</td>
+                        </tr>
+                        <tr>
+                          <td>Бикини глубокое</td>
+                          <td>6500</td>
+                          <td>Бедро</td>
+                          <td>12000</td>
+                        </tr>
+                        <tr class="bold-border">
+                          <td>Голень</td>
+                          <td>11000</td>
+                          <td>Ноги полностью</td>
+                          <td>19000</td>
+                        </tr>
+                        <tr>
+                          <td colspan="4" class="text-center">Другие услуги</td>
+                        </tr>
+                        <tr>
+                          <td>Укладка</td>
+                          <td>от 6500</td>
+                          <td>Вечерние прически</td>
+                          <td>от 1500</td>
+                        </tr>
+                        <tr>
+                          <td>Кератиновое выпрямление волос</td>
+                          <td>от 5000</td>
+                          <td>Биозавивка</td>
+                          <td>1500</td>
+                        </tr>
+                        <tr>
+                          <td>Химическая завивка</td>
+                          <td>от 900</td>
+                          <td>Ламинирование</td>
+                          <td>от 1000</td>
+                        </tr>
+                        <tr>
+                          <td>Мелирование</td>
+                          <td>от 1100</td>
+                          <td>Ламинирование</td>
+                          <td>от 1500</td>
+                        </tr>
+                        <tr>
+                          <td>Окраска (Лонда)</td>
+                          <td>от 1000</td>
+                          <td>Окраска (Велла)</td>
+                          <td>от 2000</td>
+                        </tr>
+                        <tr>
+                          <td>Олаплекс</td>
+                          <td>от 1500</td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
