@@ -14,7 +14,7 @@ $mail->SMTPSecure = 'tls';
 $mail->Port = 587;
 $mail->setLanguage('ru', 'vendor/phpmailer/phpmailer/language');
 
-$email_to = "jon.daveyan@gmail.com";
+$email_to = "salon.reutov@gmail.com";
 $email_subject = "Salon-reutov";
 
 $first_name = $_POST['name']; // required
